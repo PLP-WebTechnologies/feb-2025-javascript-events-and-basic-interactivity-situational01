@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moodify – The Mood Playground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🎭 Moodify – What's Your Mood Today?</h1>
+
+    <div class="mood-buttons">
+      <button data-mood="happy">😊 Happy</button>
+      <button data-mood="sad">😢 Sad</button>
+      <button data-mood="chill">😌 Chill</button>
+      <button data-mood="angry">😠 Angry</button>
+      <button data-mood="excited">🤩 Excited</button>
+    </div>
+
+    <div id="mood-display" class="hidden">
+      <h2>Your Mood: <span id="mood-name"></span></h2>
+      <p id="mood-message"></p>
+    </div>
+
+    <hr />
+
+    <form id="mood-form">
+      <h2>📔 Mood Diary</h2>
+      <label>
+        Email:
+        <input type="email" id="email" required /> </label
+      ><br />
+      <label>
+        Password:
+        <input type="password" id="password" required /> </label
+      ><br />
+      <label>
+        Describe your mood:
+        <textarea id="diary" required></textarea></label
+      ><br />
+      <button type="submit">Submit Mood</button>
+      <p id="form-feedback"></p>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

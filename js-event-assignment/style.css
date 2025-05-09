@@ -1,0 +1,36 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  padding: 2rem;
+  transition: background 0.5s;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#mood-display {
+  margin-top: 1.5rem;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#form-feedback {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
